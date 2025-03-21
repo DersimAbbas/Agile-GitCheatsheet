@@ -6,3 +6,4 @@
 6. git remote set -url origin <branch>
 7. git branch -D <branch>
 8. git branch -d <branch>
+9. git reset [file]
