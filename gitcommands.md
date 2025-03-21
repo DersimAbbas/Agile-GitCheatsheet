@@ -27,3 +27,4 @@
 27. git reset --soft HEAD-
 28. git stash list
 29. git stash apply 
+30. git stash clear
