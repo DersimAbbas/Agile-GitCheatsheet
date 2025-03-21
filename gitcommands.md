@@ -19,3 +19,4 @@
 19. git pull --rebase
 20. git push --force
 21. git diff --staged
+22. git diff <branch1> <branch2>
