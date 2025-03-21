@@ -8,4 +8,5 @@
 8. git branch -d <branch>
 9. git reset [file]
 10. git revert [commit]
-11. git config --global.user.name
+11. git config --global user.name
+12. git config --global user.email
