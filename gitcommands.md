@@ -10,3 +10,4 @@
 10. git revert [commit]
 11. git config --global user.name
 12. git config --global user.email
+13. git status
