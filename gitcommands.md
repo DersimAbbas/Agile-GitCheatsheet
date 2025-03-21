@@ -15,3 +15,4 @@
 15. git rm <file>
 16. git remote remove <name>
 17. git remote show origin
+18. git merge --abort
