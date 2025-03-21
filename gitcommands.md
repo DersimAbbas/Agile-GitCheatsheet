@@ -14,3 +14,4 @@
 14. git show <commit>
 15. git rm <file>
 16. git remote remove <name>
+17. git remote show origin
