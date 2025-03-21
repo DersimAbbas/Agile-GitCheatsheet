@@ -1,0 +1,60 @@
+1. git init
+2. git clone (url)
+3. git status
+4. git add
+5. git commit -m "message"
+6. git push
+7. git pull
+8. git fetch
+9. git branch
+10. git checkout
+11. git merge
+12. git log
+13. git diff
+14. git reset [file]
+15. git revert [commit]
+16. git stash
+17. git stash pop
+18. git remote -v
+19. git reset <file>
+20. git stash apply
+21. git rm <file>
+22. git tag <tagname>
+23. git cherry-pick <commit>
+24. git rebase <branch>
+25. git conifg --global user.name 
+26. git log --oneline
+27. git blame <file>
+28. git show <commit>
+29. got config --global email
+30. git archive --format=zip --output=archive.zip <branch>
+31. git bisect start
+32. git bisect bad
+33. git bisect good <commit>
+34. git shortlog
+35. git reflog
+36. git clean -f
+37. git mv <oldfile> <new_file>
+38. git submodule add <rep_url> <path>
+39. git submodule update --init
+40. git remote remove <name>
+41. git commit --ammend
+42. git push --setupstream--origin branch
+43. git fetch --prune
+44. git push --force
+45. git diff --staged
+46. git diff <branch1> <branch2>
+47. git stash list
+48. git checkout -b <newbranch>
+49. git reset --hard
+50. git merge --no-ff<branch>
+51. git pull -rebase
+52. git remote set -url origin <new_repo>
+53. git tag -a v1.0 -m "version 1.0 release"
+54. git remote show origin
+55. git gc
+56. git merge --abort
+57 git commit -v
+58. git reflog expire --expire=now --all
+59. git branch -D <branch>
+60. git branch -d <branch>
