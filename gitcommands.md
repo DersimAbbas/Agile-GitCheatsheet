@@ -24,3 +24,4 @@
 24. git reset --hard
 25. git rebase -i HEAD <n>
 26. git log --oneline
+27. git reset --soft HEAD-1
