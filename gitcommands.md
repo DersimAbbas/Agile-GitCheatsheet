@@ -20,3 +20,4 @@
 20. git push --force
 21. git diff --staged
 22. git diff <branch1> <branch2>
+23. git tag -a v1.0 -m "version 1.0 release"
