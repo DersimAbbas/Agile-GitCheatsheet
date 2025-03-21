@@ -26,3 +26,4 @@
 26. git log --oneline
 27. git reset --soft HEAD-
 28. git stash list
+29. git stash apply 
