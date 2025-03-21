@@ -11,3 +11,4 @@
 11. git config --global user.name
 12. git config --global user.email
 13. git status
+14. git show <commit>
