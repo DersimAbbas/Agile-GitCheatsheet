@@ -16,3 +16,4 @@
 16. git remote remove <name>
 17. git remote show origin
 18. git merge --abort
+19. git pull --rebase
