@@ -8,3 +8,4 @@
 38 git bisect good <commit>
 39 git shortlog
 40 git reflog
+41 git clean -f
