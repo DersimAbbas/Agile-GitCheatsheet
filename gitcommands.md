@@ -10,3 +10,4 @@
 40 git reflog
 41 git clean -f
 42 git mv <oldfile> <new_file>
+43 git submodule add <rep_url> <path>
