@@ -9,3 +9,4 @@
 39 git shortlog
 40 git reflog
 41 git clean -f
+42 git mv <oldfile> <new_file>
