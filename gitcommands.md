@@ -2,3 +2,4 @@
 32 git cherry-pick <commit>
 33 git rebase <branch> 
 34 git blame <file>
+35 git archive --format=zip --output=archive.zip <branch>
