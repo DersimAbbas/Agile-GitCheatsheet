@@ -1,30 +1,32 @@
-1. git push --set-upstream origin <branch>
-2. git stash
-3. git stash pop
-4. git merge --no-ff <branch>
-5. git pull -rebase
-6. git remote set -url origin <branch>
-7. git branch -D <branch>
-8. git branch -d <branch>
-9. git reset [file]
-10. git revert [commit]
-11. git config --global user.name
-12. git config --global user.email
-13. git status
-14. git show <commit>
-15. git rm <file>
-16. git remote remove <name>
-17. git remote show origin
-18. git merge --abort
-19. git pull --rebase
-20. git push --force
-21. git diff --staged
-22. git diff <branch1> <branch2>
-23. git tag -a v1.0 -m "version 1.0 release"
-24. git reset --hard
-25. git rebase -i HEAD <n>
-26. git log --oneline
-27. git reset --soft HEAD-
-28. git stash list
-29. git stash apply 
-30. git stash clear
+| Git-kommando                                  | Beskrivning                                                                                   | Fel/problem & lösning (om tillämpligt)                                                              |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| git push --set-upstream origin                | Skickar lokala commits till fjärr-repository och sätter upp en upstream-branch                 | Om remote-branchen inte finns kan det uppstå fel. Lösning: skapa rätt branch och försök igen          |
+| git stash                                     | Sparar temporärt ändringar som inte är committade                                               | –                                                                                                   |
+| git stash pop                                 | Återställer senast stashade ändringar och tar bort dem från stash-listan                        | Konflikter kan uppstå vid återställning; lös genom att manuellt hantera merge-konflikter             |
+| git merge --no-ff                             | Slår samman grenar med en explicit merge-commit (ingen fast-forward)                            | Konflikter kan uppstå; lösning: manuellt redigera och slutföra merge-processen                        |
+| git pull -rebase                              | Hämtar remote-ändringar och rebasar lokala commits ovanpå dessa                                 | Vid rebase kan merge-konflikter uppstå; lös med `git rebase --continue` efter att ha löst konflikter  |
+| git remote set -url origin                     | Uppdaterar URL:en för remote-repositoryt "origin"                                               | Kontrollera syntaxen – felaktig flagga kan orsaka problem                                           |
+| git branch -D                                 | Tvingar borttagning av en lokal gren                                                            | Viktigt att vara säker – oönskade ändringar går förlorade om fel gren tas bort                      |
+| git branch -d                                 | Tar bort en lokal gren som redan är merged                                                     | Om grenen inte är fullständigt mergad ges ett felmeddelande; lös med `-D` om borttagning är önskad    |
+| git reset [file]                              | Återställer en specifik fil från staging-området                                                | Förlorar staging-status för filen; lägg till filen igen om nödvändigt                               |
+| git revert [commit]                           | Skapar en ny commit som återställer ändringarna från ett tidigare commit                        | Kan orsaka merge-konflikter; lös genom att manuellt hantera dem                                       |
+| git config --global user.name                 | Ställer in det globala användarnamnet för alla commits                                           | –                                                                                                   |
+| git config --global user.email                | Ställer in den globala e-postadressen för alla commits                                           | Felaktig e-post kan påverka commit-identiteten; dubbelkolla värdet                                    |
+| git status                                    | Visar aktuellt status för filer i repository                                                   | –                                                                                                   |
+| git show                                      | Visar detaljerad information om en commit eller ett Git-objekt                                   | –                                                                                                   |
+| git rm                                        | Tar bort filer från både arbetskatalog och staging-området                                      | Säkerställ att du inte tar bort viktiga filer – backup innan commit kan vara en lösning               |
+| git remote remove                             | Tar bort en remote-konfiguration (t.ex. "origin")                                               | –                                                                                                   |
+| git remote show origin                        | Visar detaljerad information om remote-repositoryt "origin"                                     | –                                                                                                   |
+| git merge --abort                             | Avbryter en pågående merge-process och återställer repositoryt till tillståndet före merge        | –                                                                                                   |
+| git pull --rebase                             | Hämtar ändringar från remote och applicerar dem med rebase                                      | Konflikter kan uppstå vid rebase; lös med `git rebase --continue` efter konfliktlösning               |
+| git push --force                              | Tvingar en push till remote, vilket överskriver fjärrhistoriken                                  | Riskerar att skriva över andras arbete; var försiktig och kommunicera med teamet                     |
+| git diff --staged                             | Visar skillnader mellan staged ändringar och senaste commit                                      | –                                                                                                   |
+| git diff                                      | Visar skillnader mellan arbetskatalogen och senaste commit                                       | –                                                                                                   |
+| git tag -a v1.0 -m "version 1.0 release"        | Skapar en annoterad tagg med ett meddelande för en specifik version                              | –                                                                                                   |
+| git reset --hard                              | Återställer både staging-området och arbetskatalogen till senaste commit, oåterkalleligt           | Ocommittade ändringar går förlorade; se till att du verkligen vill rensa ändringarna                   |
+| git rebase -i HEAD                            | Startar en interaktiv rebase från HEAD för att redigera commit-historiken                        | Felaktig redigering kan förstöra historiken; säkerhetskopiera innan interaktiv rebase                 |
+| git log --oneline                             | Visar en kortfattad översikt över commit-historiken                                              | –                                                                                                   |
+| git reset --soft HEAD-                        | Återställer HEAD men behåller ändringarna i staging-området; vanligtvis används med en korrekt referens (t.ex. HEAD~1) | Kan vara förvirrande vid fel syntax; använd t.ex. `HEAD~1` för att specificera rätt commit          |
+| git stash list                                | Visar en lista över alla stashade ändringar                                                     | –                                                                                                   |
+| git stash apply                               | Applicerar en specifik stash utan att ta bort den från stash-listan                             | Merge-konflikter kan uppstå; lös genom att manuellt hantera konflikter                               |
+| git stash clear                               | Tar bort alla stashade ändringar permanent                                                     | Kan leda till permanent förlust av ändringar; kontrollera att inget viktigt försvinner              |
