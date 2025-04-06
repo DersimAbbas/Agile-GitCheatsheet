@@ -7,3 +7,4 @@
 37 git bisect bad
 38 git bisect good <commit>
 39 git shortlog
+40 git reflog
