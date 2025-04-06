@@ -1,1 +1,2 @@
-31 git fetch
+31 git fetch 
+32 git cherry-pick <commit>
