@@ -6,3 +6,4 @@
 36 git bisect start
 37 git bisect bad
 38 git bisect good <commit>
+39 git shortlog
