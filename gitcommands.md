@@ -11,3 +11,4 @@
 41 git clean -f
 42 git mv <oldfile> <new_file>
 43 git submodule add <rep_url> <path>
+44 git submodule update --init
