@@ -5,3 +5,4 @@
 50. git push
 51. git pull 
 52. git branch 
+53. git checkout 
