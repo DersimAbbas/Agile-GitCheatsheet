@@ -9,3 +9,4 @@
 54. git merge 
 55. git log 
 56. git remote -v
+57. git reset <file>
