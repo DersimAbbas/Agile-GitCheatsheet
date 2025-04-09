@@ -7,3 +7,4 @@
 52. git branch 
 53. git checkout 
 54. git merge 
+55. git log 
