@@ -10,3 +10,4 @@
 55. git log 
 56. git remote -v
 57. git reset <file>
+58. git diff 
