@@ -8,3 +8,4 @@
 53. git checkout 
 54. git merge 
 55. git log 
+56. git remote -v
