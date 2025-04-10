@@ -19,7 +19,7 @@
 | git push --set-upstream origin                | Skickar lokala commits till fjärr-repository och sätter upp en upstream-branch                    |                                        |
 | git stash                                     | Sparar temporärt ändringar som inte är committade                                                 |                                        |
 | git stash pop                                 | Återställer senast stashade ändringar och tar bort dem från stash-listan                          |                                        |
-| git merge --no-ff                             | Slår samman grenar med en merge commit utan fast-forward                                          |                                        |
+| git merge --no-ff                             | Slår samman grenar med en merge commit utan fast-forward                                          |                                  |
 | git pull -rebase                              | Hämtar remote ändringar och applicerar dem med rebase istället för merge                           |                                        |
 | git remote set -url origin                    | Uppdaterar URL:en för remote "origin"                                                            |                                        |
 | git branch -D                                 | Tvingar borttagning av en lokal gren                                                             |                                        |
@@ -54,7 +54,7 @@
 | git pull                                    | Hämtar och integrerar ändringar från remote repository                                    |                                        |
 | git branch                                  | Visar eller hanterar grenar i repositoryt                                                 |                                        |
 | git checkout                                | Byter gren eller återställer filer                                                        |                                        |
-| git merge                                   | Slår samman två grenar                                                                    |                                        |
+| git merge                                   | Slår samman två grenar                                                                    | merge conflict skedde under en pull request. Löste konflikten Via conflict resolve editor                                          |
 | git log                                     | Visar commit-historiken                                                                   |                                        |
 | git remote -v                               | Visar konfigurerad remote information med URL:er                                          |                                        |
 | git reset <file>                            | Återställer en specifik fil från staging-området till arbetskatalogen                       |                                        |
