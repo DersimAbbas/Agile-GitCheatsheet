@@ -1,4 +1,3 @@
-
 | Git-kommando                                                  | Beskrivning                                                                           | Fel/problem & lösning (om tillämpligt) |
 |---------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------|
 | git fetch                                                     | Hämtar nya data från remote repository utan att integrera dem                         |                                        |
@@ -47,4 +46,17 @@
 | git stash list                                | Visar en lista över alla stashade ändringar                                                     |                                        |
 | git stash apply                               | Applicerar en specifik stash utan att ta bort den från listan                                    |                                        |
 | git stash clear                               | Tar bort alla stashade ändringar permanent                                                      |                                        |
-
+| git init                                    | Initierar ett nytt Git repository                                                       |                                        |
+| git clone (url)                             | Klonar ett existerande repository från den angivna URL:en                                |                                        |
+| git add                                     | Lägger till filer i staging-området                                                     |                                        |
+| git commit -m "message"                       | Skapar en commit med det angivna meddelandet                                              |                                        |
+| git push                                    | Skickar lokala commits till remote repository                                             |                                        |
+| git pull                                    | Hämtar och integrerar ändringar från remote repository                                    |                                        |
+| git branch                                  | Visar eller hanterar grenar i repositoryt                                                 |                                        |
+| git checkout                                | Byter gren eller återställer filer                                                        |                                        |
+| git merge                                   | Slår samman två grenar                                                                    |                                        |
+| git log                                     | Visar commit-historiken                                                                   |                                        |
+| git remote -v                               | Visar konfigurerad remote information med URL:er                                          |                                        |
+| git reset <file>                            | Återställer en specifik fil från staging-området till arbetskatalogen                       |                                        |
+| git diff                                    | Visar skillnader mellan ändrade filer och senaste commit                                  |                                        |
+| git commit -                                | Öppnar standard commit-editor för att skapa en commit utan att ange meddelande direkt       |                                        |
